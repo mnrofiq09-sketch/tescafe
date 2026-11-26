@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee Corner Café</title>
+
+    <style>
+        /* RESET CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* GAYA UMUM */
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1400&q=80") no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.9);
+            min-height: 100vh;
+        }
+
+        /* HEADER */
+        header {
+            background-color: rgba(111, 78, 55, 0.95);
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            position: relative;
+        }
+
+        header img {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            border: 2px solid white;
+            position: absolute;
+            left: 40px;
+            top: 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            letter-spacing: 1px;
+        }
+
+        header h3 {
+            font-weight: normal;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        /* NAVIGASI */
+        nav {
+            background-color: #cbb693;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #3b2f2f;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* KONTEN UTAMA */
+        main {
+            padding: 30px;
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #6f4e37;
+            border-bottom: 2px solid #cbb693;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* ARTIKEL EVENT */
+        article {
+            background-color: #f2ebe3;
+            padding: 20px;
+            border-left: 4px solid #6f4e37;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        time {
+            font-weight: bold;
+            color: #6f4e37;
+        }
+
+        /* ALAMAT */
+        address {
+            font-style: normal;
+            margin-top: 25px;
+            background-color: #f8f5f0;
+            padding: 15px;
+            border-left: 4px solid #cbb693;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            background-color: #3b2f2f;
+            color: #f0e6d2;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #f0e6d2;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* RESPONSIVE MOBILE */
+        @media screen and (max-width: 600px) {
+
+            header {
+                padding: 20px 10px;
+            }
+
+            header img {
+                position: static;
+                display: block;
+                margin: 0 auto 10px;
+            }
+
+            header h1 {
+                font-size: 26px;
+            }
+
+            header h3 {
+                font-size: 14px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+                font-size: 14px;
+            }
+
+            main {
+                margin: 15px;
+                padding: 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <!-- HEADER -->
+    <header>
+        <img
+            src="https://cdn-icons-png.flaticon.com/512/924/924514.png"
+            alt="Coffee Logo"
+        >
+
+        <h1>Coffee Corner Café</h1>
+        <h3>"Brewed with Passion, Served with Love"</h3>
+    </header>
+
+    <!-- NAVIGASI -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- KONTEN UTAMA -->
+    <main>
+
+        <!-- HOME -->
+        <section id="home">
+            <h2>Welcome to Coffee Corner!</h2>
+
+            <p>
+                Located in the heart of the city, Coffee Corner Café
+                is your perfect spot to relax, work, or meet friends
+                while enjoying our freshly brewed coffee and
+                homemade pastries.
+            </p>
+        </section>
+
+        <!-- MENU -->
+        <section id="menu">
+            <h2>Our Best-Selling Menu</h2>
+
+            <ul>
+                <li>☕ Espresso – Rp 20.000</li>
+                <li>🥐 Croissant – Rp 15.000</li>
+                <li>🍰 Cheesecake – Rp 25.000</li>
+                <li>🧋 Caramel Latte – Rp 28.000</li>
+            </ul>
+        </section>
+
+        <!-- EVENTS -->
+        <article id="events">
+            <h2>Upcoming Event</h2>
+
+            <time datetime="2026-11-20">
+                November 20, 2026
+            </time>
+
+            <p>
+                Join our "Latte Art Competition"!
+                Show your coffee creativity and win special prizes.
+            </p>
+        </article>
+
+        <!-- CONTACT -->
+        <address id="contact">
+            <p>
+                <strong>Address:</strong><br>
+                Coffee Corner Café<br>
+                Jl. Mawar No. 15, Surabaya<br>
+                Telp: 0812-3456-7890
+            </p>
+        </address>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <small>
+            <i>Copyright &copy; 2026 Coffee Corner Café</i>
+            <br>
+
+            <a href="mailto:coffeecorner@gmail.com">
+                coffeecorner@gmail.com
+            </a>
+        </small>
+    </footer>
+
+</div>
+
+</body>
+</html>

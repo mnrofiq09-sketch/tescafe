@@ -1,0 +1,128 @@
+  /* --- Gaya Umum Halaman --- */ 
+        body { 
+            font-family: "Segoe UI", Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: #e7b28c ;
+            background-size: cover; 
+            color: #333; 
+        } 
+ 
+        /* Lapisan transparan agar teks lebih terbaca */ 
+        .overlay { 
+            background-color: rgba(255, 255, 255, 0.9); 
+            min-height: 100vh; 
+        } 
+ 
+        /* --- Header --- */ 
+        header { 
+            background-color: rgba(111, 78, 55, 0.9); /* warna kopi transparan */ 
+            color: #fff; 
+            text-align: center; 
+            padding: 20px 0; 
+            position: relative; 
+        } 
+ 
+        header img { 
+            width: 80px; 
+            height: 80px; 
+            border-radius: 50%; 
+            border: 2px solid #fff; 
+            position: absolute; 
+            top: 15px; 
+            left: 40px; 
+        } 
+ 
+        header h1 { 
+            margin: 0; 
+            font-size: 36px; 
+            letter-spacing: 1px; 
+        } 
+ 
+        header h3 { 
+            margin-top: 5px; 
+            font-weight: normal; 
+            font-style: italic; 
+        } 
+ 
+        /* --- Navigasi --- */ 
+        nav { 
+            background-color: #cbb693; 
+            text-align: center; 
+            padding: 10px 0; 
+        } 
+ 
+        nav a { 
+            text-decoration: none; 
+            color: #3b2f2f; 
+            font-weight: bold; 
+            margin: 0 15px; 
+            font-size: 16px; 
+        } 
+ 
+        nav a:hover { 
+            color: #6f4e37; 
+            text-decoration: underline; 
+        } 
+ 
+        /* --- Konten Utama --- */ 
+        main { 
+            padding: 30px; 
+            max-width: 900px; 
+            margin: 30px auto; 
+            background-color: #fff; 
+            box-shadow: 0 0 20px rgba(0,0,0,0.15); 
+            border-radius: 10px; 
+        } 
+ 
+        h2 { 
+            color: #6f4e37; 
+            border-bottom: 2px solid #cbb693; 
+            padding-bottom: 5px; 
+        } 
+ 
+        ul { 
+            list-style-type: square; 
+            padding-left: 20px; 
+        } 
+ 
+        article { 
+            background-color: #f2ebe3; 
+            padding: 15px; 
+            border-left: 4px solid #6f4e37; 
+            margin-top: 20px; 
+            border-radius: 5px; 
+        } 
+ 
+        time { 
+            font-weight: bold; 
+            color: #6f4e37; 
+        } 
+ 
+        /* --- Alamat --- */ 
+        address { 
+            font-style: normal; 
+            margin-top: 25px; 
+            background-color: #f8f5f0; 
+            padding: 10px; 
+            border-left: 4px solid #cbb693; 
+        } 
+ 
+        /* --- Footer --- */ 
+        footer { 
+            text-align: center; 
+            background-color: #3b2f2f; 
+            color: #f0e6d2; 
+            padding: 15px 0; 
+            margin-top: 30px; 
+            font-size: 14px; 
+        } 
+ 
+        footer a { 
+            color: #f0e6d2; 
+            text-decoration: none; 
+        } 
+ 
+        footer a:hover { 
+            text-decoration: underline; 
+        }
